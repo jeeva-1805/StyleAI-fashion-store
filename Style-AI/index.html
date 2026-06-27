@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleAI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>StyleAI</h1>
+
+    <nav class="navbar">
+
+        <div class="logo"><img src="icons/styleai.jpeg" style="height: 40px;">
+            StyleAI
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Shop</a></li>
+
+            <li><a href="#">Categories</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <input type="text" id="searchBox" placeholder="Search products...">
+
+            <button onclick="searchProducts()">
+                Search
+            </button>
+
+            <a href="cart.html">
+
+                <button id="cartBtn">
+                    🛒 Cart (<span id="cartCount">0</span>)
+                </button>
+
+            </a>
+
+        </div>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover Your Perfect Style</h1>
+
+            <p>
+                AI Powered Men's Fashion Store
+            </p>
+
+            <button class="shop-btn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h2 class="title">
+            Featured Products
+        </h2>
+
+        <div id="productContainer"></div>
+
+    </section>
+    <section class="ai-section">
+
+        <h2>🤖 AI Fashion Assistant</h2>
+
+        <p>Ask AI what to wear.</p>
+
+        <input type="text" id="userPrompt" placeholder="Example: Suggest an outfit for a wedding">
+
+        <button onclick="askAI()">
+            Ask AI
+        </button>
+
+        <div id="aiResponse"></div>
+
+    </section>
+
+
+    <script src="products.js"></script>
+
+    <script src="app.js"></script>
+    <script src="ai.js"></script>
+</body>
+
+</html>
